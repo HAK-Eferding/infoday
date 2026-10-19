@@ -1,0 +1,14 @@
+# Sperrdateien von Excel / LibreOffice (z. B. beim Bearbeiten der CSV)
+~$*
+.~lock.*#
+
+# Betriebssystem
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editoren
+.vscode/
+.idea/
+*.swp
+*~
