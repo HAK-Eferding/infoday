@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#ffffff">
+  <title>Infoday · HAK/HAS Eferding</title>
+  <meta name="description" content="Raumplan, Stationen-Checkliste und Umfrage zum Infoday der HAK/HAS Eferding.">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="module" src="js/app.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <img class="topbar__logo" src="assets/logo.png" alt="HAK/HAS Eferding">
+    <div class="topbar__text">
+      <h1>Infoday</h1>
+      <p id="event-date"></p>
+    </div>
+  </header>
+
+  <main>
+    <!-- Raumplan -->
+    <section class="panel panel--plan" id="panel-plan" data-tab="plan">
+      <div class="plan-toolbar">
+        <div class="segmented" role="tablist" aria-label="Stockwerk">
+          <button type="button" role="tab" data-floor="eg" aria-selected="true">Erdgeschoss</button>
+          <button type="button" role="tab" data-floor="og1" aria-selected="false">1. Stock</button>
+        </div>
+        <div class="legend">
+          <span><i class="sw sw--station"></i>Station</span>
+          <span><i class="sw sw--visited"></i>besucht</span>
+        </div>
+      </div>
+      <div class="plan-stage" id="plan-stage">
+        <svg id="plan" class="plan" role="img" aria-label="Raumplan"></svg>
+        <div class="zoom-controls">
+          <button type="button" data-zoom="in" aria-label="Hineinzoomen"></button>
+          <button type="button" data-zoom="out" aria-label="Herauszoomen"></button>
+          <button type="button" data-zoom="reset" aria-label="Ganzen Plan zeigen"></button>
+        </div>
+      </div>
+
+      <div class="sheet" id="sheet" hidden>
+        <button type="button" class="sheet__close" id="sheet-close" aria-label="Schließen"></button>
+        <p class="sheet__floor" id="sheet-floor"></p>
+        <h2 class="sheet__title" id="sheet-title"></h2>
+        <p class="sheet__text" id="sheet-text"></p>
+        <button type="button" class="btn" id="sheet-toggle"></button>
+      </div>
+    </section>
+
+    <!-- Checkliste -->
+    <section class="panel panel--scroll" id="panel-liste" data-tab="liste" hidden>
+      <div class="content">
+        <div class="progress-card">
+          <p class="progress-card__label"><strong id="progress-count">0</strong> von <span id="progress-total">0</span> Stationen besucht</p>
+          <div class="progress"><div class="progress__bar" id="progress-bar"></div></div>
+        </div>
+        <div class="done-card" id="done-card" hidden>
+          <h2>Geschafft!</h2>
+          <p>Du hast alle Stationen besucht. Wir freuen uns, wenn du uns noch kurz sagst, wie dir der Infoday gefallen hat.</p>
+          <a class="btn" href="#umfrage">Zur Umfrage</a>
+        </div>
+        <div id="checklist"></div>
+        <button type="button" class="link-btn" id="reset-list">Liste zurücksetzen</button>
+      </div>
+    </section>
+
+    <!-- Umfrage -->
+    <section class="panel panel--survey" id="panel-umfrage" data-tab="umfrage" hidden>
+      <div class="survey" id="survey"></div>
+    </section>
+  </main>
+
+  <nav class="tabbar" aria-label="Hauptnavigation">
+    <a href="#plan" data-tab="plan"><span class="tabbar__icon" data-icon="map"></span>Raumplan</a>
+    <a href="#liste" data-tab="liste"><span class="tabbar__icon" data-icon="list"><b class="badge" id="badge" hidden></b></span>Checkliste</a>
+    <a href="#umfrage" data-tab="umfrage"><span class="tabbar__icon" data-icon="chat"></span>Umfrage</a>
+  </nav>
+</body>
+</html>
