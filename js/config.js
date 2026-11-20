@@ -5,5 +5,5 @@ export const CONFIG = {
 
   // Link zur Microsoft-Forms-Umfrage (Teilen → Link kopieren).
   // Leer lassen, solange die Umfrage noch nicht fertig ist.
-  formsUrl: '',
+  formsUrl: 'https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAO__RMsvRVUQlhOMTFHUUtOVko3M0hGV05JNkIxNEdSSi4u',
 };
