@@ -1,5 +1,5 @@
 // Geometrie der Raumpläne.
-// Koordinaten stammen 1:1 aus den Plänen in Druckdatei_Raumplan.pdf (Bild 1600 × 1131 px),
+// Koordinaten stammen 1:1 aus den Plänen in Druckdatei_Raumplan_neu.pdf (Bild 1600 × 1131 px),
 // daher stimmen die Größenverhältnisse exakt mit dem Original überein.
 //
 // Jeder Raum hat eine id. Steht diese id in data/stationen.csv, wird der Raum zur Station
@@ -21,7 +21,7 @@ export const FLOORS = {
       { id: 'nawi', r: [305, 353, 395, 528], label: 'NAWI' },
       { id: 'raum-11', r: [398, 353, 460, 528], label: 'Raum 11' },
       { id: 'edv4', r: [463, 353, 623, 528], label: 'EDV4 / Raum 10' },
-      { id: 'omai-smk', r: [626, 353, 833, 528], label: 'OMAI / SMK' },
+      { id: 'omai-smk-winf', r: [626, 353, 833, 528], label: 'OMAI / SMK / WINF' },
       { id: 'raum-8', r: [836, 353, 899, 528], label: 'Raum 8' },
       { id: 'genossenschaft', r: [910, 474, 1053, 528], label: 'Schüler:innen- / genossenschaft' },
       { id: 'eg-r1', r: [1060, 353, 1118, 528] },
@@ -94,7 +94,7 @@ export const FLOORS = {
       { id: '3ak', r: [1275, 492, 1518, 719], label: '3AK / Raum 34' },
 
       // untere Reihe
-      { id: 'kfm-winf', r: [571, 789, 800, 1005], label: 'kfm. Fächer / WINF' },
+      { id: 'kfm', r: [571, 789, 800, 1005], label: 'kfm. Fächer' },
       { id: 'mathe-rk-ethik', r: [803, 789, 1037, 1005], label: 'Mathematik / RK / Ethik' },
       { id: 'pbgw-geo-iwk', r: [1040, 789, 1279, 1005], label: 'PBGW / GEO / IWK' },
       { id: '2bk', r: [1282, 789, 1518, 1005], label: '2BK / Raum 33' },

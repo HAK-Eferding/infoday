@@ -35,11 +35,11 @@ wird eine Zeile gelöscht, ist der Raum wieder ein normaler grauer Raum.
 <details>
 <summary>Alle Raum-ids</summary>
 
-**Erdgeschoss:** recht-vow, raum-13, nawi, raum-11, edv4, omai-smk, raum-8, genossenschaft, eg-r1, 1as, aerztin, eg-r2, eg-r3, 4bk,
+**Erdgeschoss:** recht-vow, raum-13, nawi, raum-11, edv4, omai-smk-winf, raum-8, genossenschaft, eg-r1, 1as, aerztin, eg-r2, eg-r3, 4bk,
 deutsch-pbsk, sprachen, edv5, marktplatz, garderobe-lehrer, garderobe-lehrerinnen, eg-r4 … eg-r10, konferenzzimmer, admin, direktion
 
 **1. Stock:** 4ak, 3bk, raum-24, ausbildungsschwerpunkte, edv2, 5bk, 5ak, raum-29, besp, og-r1, raum-35, 3ak,
-kfm-winf, mathe-rk-ethik, pbgw-geo-iwk, 2bk
+kfm, mathe-rk-ethik, pbgw-geo-iwk, 2bk
 
 </details>
 
